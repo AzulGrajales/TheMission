@@ -20,6 +20,7 @@ public class ControlJugPlat : MonoBehaviour
        if (Input.GetKeyDown(KeyCode.D))
         {
             animJugador.SetBool("esCaminando", true);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
