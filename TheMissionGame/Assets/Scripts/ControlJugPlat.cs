@@ -14,12 +14,22 @@ public class ControlJugPlat : MonoBehaviour
     //salto
     public LayerMask capaDelPiso;
     public Transform sensorParaPiso;
+    public float fuerzaDelSalto;
+    private bool estaEnelpiso;
+    private float radioDelSensor = 0.07f;
 
     // Start is called before the first frame update
     void Start()
     {
         rbJugador = GetComponent<Rigidbody2D>();
         animJugador = GetComponent<Animator>();
+    }
+
+    //Metodo Fixedupdate para detectar cuando el jugador esta en el piso
+    private void FixedUpdate()
+    {
+        estaEnelpiso = Physics2D.OverlapCircle(sensorParaPiso.position, radioDelSensor, capaDelPiso);
+        animJugador.SetBool("esSaltando", !estaEnelpiso);
     }
 
     // Update is called once per frame
@@ -53,6 +63,15 @@ public class ControlJugPlat : MonoBehaviour
         if (caminar)
         {
             rbJugador.velocity = new Vector2(speed, rbJugador.velocity.y);
+        }
+
+        //para saltar
+        if (estaEnelpiso)
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rbJugador.AddForce(new Vector2(0, fuerzaDelSalto));
+            }
         }
     }
 }
