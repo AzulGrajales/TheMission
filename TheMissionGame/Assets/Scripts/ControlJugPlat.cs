@@ -40,7 +40,7 @@ public class ControlJugPlat : MonoBehaviour
             animJugador.SetBool("esCaminando", true);
             transform.localRotation = Quaternion.Euler(0, 0, 0);
             caminar = true;
-            speed = 3.5f;
+            speed = 7.0f;
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
@@ -52,7 +52,7 @@ public class ControlJugPlat : MonoBehaviour
             animJugador.SetBool("esCaminando", true);
             transform.localRotation = Quaternion.Euler(0, 180, 0);
             caminar = true;
-            speed = -3.5f;
+            speed = -7.0f;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
