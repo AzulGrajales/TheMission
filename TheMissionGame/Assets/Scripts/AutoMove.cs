@@ -27,7 +27,12 @@ public class AutoMove : MonoBehaviour
 
         if (objetoMover.transform.position == puntoactual.position)
         {
-            puntoSeleccionado = 0;
+            puntoSeleccionado += 1;
+            if (puntoSeleccionado == puntos.Length)
+            {
+                puntoSeleccionado = 0;
+            }
+            
         }
 
         puntoactual = puntos[puntoSeleccionado];

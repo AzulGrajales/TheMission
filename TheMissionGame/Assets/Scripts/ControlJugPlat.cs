@@ -74,4 +74,20 @@ public class ControlJugPlat : MonoBehaviour
             }
         }
     }
+
+    void OnCollisionEnter2D(Collision collision)
+    {
+        if (collision.transform.tag == "PlatMover")
+        {
+            transform.parent = collision.transform;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "PlatMover")
+        {
+            transform.parent = null;
+        }
+    }
 }
