@@ -1657,7 +1657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevaPos: {x: 0, y: 0}
   PicoCaer: {fileID: 882469182256591178, guid: 444e7ebbb78afab4ea57b8bb1e3d4891, type: 3}
-  intervaloParaCrear: 1
+  intervaloParaCrear: 3
 --- !u!1 &2132738296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 882469182256591183, guid: 444e7ebbb78afab4ea57b8bb1e3d4891, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.7526
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 882469182256591183, guid: 444e7ebbb78afab4ea57b8bb1e3d4891, type: 3}
       propertyPath: m_LocalPosition.y
