@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81b90a8da9bcca9449572276ca491705, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 030527fa75bc4eb47a5525768e0114df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,5 +130,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nuevaPos: {x: 0, y: 0}
-  PicoCaer: {fileID: 0}
+  PicoCaer: {fileID: 882469182256591178, guid: 444e7ebbb78afab4ea57b8bb1e3d4891, type: 3}
   intervaloParaCrear: 0
