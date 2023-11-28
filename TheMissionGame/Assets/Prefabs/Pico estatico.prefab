@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 5394422899863114955}
   - component: {fileID: 5394422899863114996}
   - component: {fileID: 5394422899863114997}
-  - component: {fileID: 5394422899863114998}
   m_Layer: 0
   m_Name: Pico estatico
-  m_TagString: Meteorito
+  m_TagString: enemigo2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,16 +111,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.431608, y: 3.2804093}
   m_EdgeRadius: 0
---- !u!114 &5394422899863114998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5394422899863114999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1dd29224edd6e4ca9973ad0dcc82b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EscenaMorir: Perdiste

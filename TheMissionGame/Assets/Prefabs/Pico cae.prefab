@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 882469182256591182}
   - component: {fileID: 882469182256591177}
   - component: {fileID: 882469182256591176}
-  - component: {fileID: 882469182256591179}
   m_Layer: 0
   m_Name: Pico cae
-  m_TagString: Meteorito
+  m_TagString: enemigo2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,16 +133,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &882469182256591179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882469182256591178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1dd29224edd6e4ca9973ad0dcc82b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EscenaMorir: Perdiste

@@ -11,7 +11,7 @@ public class saludJugador : MonoBehaviour
 
     void Start()
     {
-        ActualSalud2= MaximaSalud2;
+        ActualSalud2 = MaximaSalud2;
         barraDeSalud2.AsignarSaludMaxima2(MaximaSalud2);
     }
 
