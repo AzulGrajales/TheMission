@@ -37,11 +37,11 @@ public class Patrol : MonoBehaviour
     {
         if (puntoSeleccionada == 0)
         {
-            objetoMover.transform.localRotation = Quaternion.Euler(0, 0, -90f);
+            objetoMover.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else if (puntoSeleccionada == 1)
         {
-            objetoMover.transform.localRotation = Quaternion.Euler(0, 0, 90);
+            objetoMover.transform.localRotation = Quaternion.Euler(0, 180f, 0);
         }
     }
 }
