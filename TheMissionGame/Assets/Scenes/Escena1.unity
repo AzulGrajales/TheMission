@@ -425,6 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56077000}
   - component: {fileID: 56077001}
+  - component: {fileID: 56077002}
   m_Layer: 0
   m_Name: parentSalud
   m_TagString: Untagged
@@ -506,6 +507,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &56077002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56076999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c0485a373e9d44c83f09dc2a12b32e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barradesalud2: {fileID: 56077001}
 --- !u!1 &134610581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,7 +4502,7 @@ GameObject:
   - component: {fileID: 1353315554}
   - component: {fileID: 1353315556}
   - component: {fileID: 1353315557}
-  - component: {fileID: 1353315558}
+  - component: {fileID: 1353315559}
   m_Layer: 0
   m_Name: PlayerPlataforma
   m_TagString: Player
@@ -4638,7 +4652,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1353315558
+--- !u!114 &1353315559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4647,10 +4661,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1353315550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ce82f5c40ef5e47bf486cd21ca1692, type: 3}
+  m_Script: {fileID: 11500000, guid: af4c078bd16117648b2374ffed9290c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EscenaMorir: Perdiste
+  MaximaSalud2: 10
+  ActualSalud2: 0
+  barraDeSalud2: {fileID: 56077002}
 --- !u!1 &1395514149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6740,6 +6756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pico estatico (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5394422899863114999, guid: 32e8572cce54ee144b3255f8e3e1e1d7, type: 3}
+      propertyPath: m_TagString
+      value: enemigo0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32e8572cce54ee144b3255f8e3e1e1d7, type: 3}
 --- !u!1 &2066128344
@@ -7231,6 +7251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pico estatico
       objectReference: {fileID: 0}
+    - target: {fileID: 5394422899863114999, guid: 32e8572cce54ee144b3255f8e3e1e1d7, type: 3}
+      propertyPath: m_TagString
+      value: enemigo0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32e8572cce54ee144b3255f8e3e1e1d7, type: 3}
 --- !u!1001 &6996046570804785356
@@ -7462,6 +7486,10 @@ PrefabInstance:
     - target: {fileID: 8665469475008065712, guid: a9d8eac5448b1464d87c05b06f5b0267, type: 3}
       propertyPath: m_Name
       value: Cockroach
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665469475008065712, guid: a9d8eac5448b1464d87c05b06f5b0267, type: 3}
+      propertyPath: m_TagString
+      value: enemigo2
       objectReference: {fileID: 0}
     - target: {fileID: 8665469475008065726, guid: a9d8eac5448b1464d87c05b06f5b0267, type: 3}
       propertyPath: m_FlipX

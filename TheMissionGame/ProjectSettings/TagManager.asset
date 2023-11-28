@@ -7,6 +7,10 @@ TagManager:
   - Piso
   - PlatMover
   - Meteorito
+  - enemigo1
+  - enemigo0
+  - enemigo2
+  - enemigo3
   layers:
   - Default
   - TransparentFX
